@@ -2,13 +2,16 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.bank</groupId>
+  <groupId>com.redhat.batigerteam</groupId>
   <artifactId>Publish-Subscribe-Example</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>Publish-Subscribe-Example</name>
   <description></description>
-  <dependencies>
+  <properties>
+    <version.org.kie>${version.org.kie}</version.org.kie>
+  </properties>
+ <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
@@ -18,13 +21,13 @@
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
-      <version>7.23.0.Final-redhat-00003</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-core</artifactId>
-      <version>7.23.0.Final-redhat-00003</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -36,13 +39,13 @@
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <version>7.23.0.Final-redhat-00003</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <version>7.23.0.Final-redhat-00003</version>
+      <version>${version.org.kie}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -51,7 +54,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.23.0.Final-redhat-00003</version>
+        <version>${version.org.kie}</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

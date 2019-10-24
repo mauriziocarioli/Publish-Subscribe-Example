@@ -9,7 +9,36 @@
     <event-listeners/>
     <task-event-listeners/>
     <globals/>
-    <work-item-handlers/>
+    <work-item-handlers>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new com.redhat.batigerteam.ReceiveTaskHandler()</identifier>
+            <parameters>
+                <parameter xsi:type="objectModel">
+                    <resolver>mvel</resolver>
+                    <identifier>java.lang.String</identifier>
+                    <parameters>
+                        <parameter xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">MessageId</parameter>
+                    </parameters>
+                </parameter>
+            </parameters>
+            <name>Receive Task</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new com.redhat.batigerteam.SendTaskHandler()</identifier>
+            <parameters>
+                <parameter xsi:type="objectModel">
+                    <resolver>mvel</resolver>
+                    <identifier>java.lang.String</identifier>
+                    <parameters>
+                        <parameter xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">Message</parameter>
+                    </parameters>
+                </parameter>
+            </parameters>
+            <name>Send Task</name>
+        </work-item-handler>
+    </work-item-handlers>
     <environment-entries/>
     <configurations/>
     <required-roles/>

@@ -41,7 +41,7 @@ public class SendTaskHandler implements WorkItemHandler {
     public void executeWorkItem(WorkItem workItem, WorkItemManager manager) {
         String message = (String) workItem.getParameter("Message");
         logger.debug("Sending message: {}", message);
-        ksession.sendSignal("Send Task",message);
+        ksession.signalEvent("Send Task",message);
         manager.completeWorkItem(workItem.getId(), null);
     }
 

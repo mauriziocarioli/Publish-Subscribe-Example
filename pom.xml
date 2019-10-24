@@ -11,7 +11,7 @@
   <properties>
     <version.org.kie>7.23.0.Final-redhat-00003</version.org.kie>
   </properties>
- <dependencies>
+  <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>

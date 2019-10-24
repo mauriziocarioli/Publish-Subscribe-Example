@@ -34,7 +34,7 @@ public class SendTaskHandler implements WorkItemHandler {
         this.ksession = ksession;
     }
     
-    public setKnowledgeRuntime(KieSession ksession) {
+    public void setKnowledgeRuntime(KieSession ksession) {
         this.ksession = ksession;
     }
 

@@ -12,7 +12,7 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new com.redhat.batigerteam.ReceiveTaskHandler()</identifier>
+            <identifier>new com.redhat.batigerteam.publish_subscribe_example.ReceiveTaskHandler()</identifier>
             <parameters>
                 <parameter xsi:type="objectModel">
                     <resolver>mvel</resolver>
@@ -26,7 +26,7 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new com.redhat.batigerteam.SendTaskHandler()</identifier>
+            <identifier>new com.redhat.batigerteam.publish_subscribe_example.SendTaskHandler()</identifier>
             <parameters>
                 <parameter xsi:type="objectModel">
                     <resolver>mvel</resolver>

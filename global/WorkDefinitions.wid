@@ -1,4 +1,25 @@
 [
+    
+    [
+        "name" : "Send",
+        "defaultHandler" : "mvel: new com.redhat.batigerteam.publish_subscribe_example.SendTaskHandler()",
+        "parameters" : [
+            "Message" : new StringDataType()
+        ],
+        "displayName" : "Send",
+        "icon" : "defaultsendicon.png"
+    ],
+  
+    [
+        "name" : "Receive",
+        "defaultHandler" : "mvel: new com.redhat.batigerteam.publish_subscribe_example.ReceiveTaskHandler()",
+        "parameters" : [
+            "MessageId" : new StringDataType()
+        ],
+        "displayName" : "Receive",
+        "icon" : "defaultreceiveicon.png"
+    ],
+  
   [
     "name" : "Email",
     "parameters" : [

@@ -9,19 +9,19 @@
     <event-listeners>
         <event-listener>
             <resolver>mvel</resolver>
-            <identifier>new com.health_insurance.monitoring.CustomProcessEventListener()</identifier>
+            <identifier>new com.redhat.batigerteam.example_tracing.ExampleProcessEventListener()</identifier>
             <parameters/>
         </event-listener>
         <event-listener>
             <resolver>mvel</resolver>
-            <identifier>new com.health_insurance.batigerteam.monitoring.CustomAgendaEventListener()</identifier>
+            <identifier>new com.redhat.batigerteam.example_tracing.ExampleAgendaEventListener()</identifier>
             <parameters/>
         </event-listener>
     </event-listeners>
     <task-event-listeners>
         <task-event-listener>
             <resolver>mvel</resolver>
-            <identifier>new com.health_insurance.monitoring.CustomTaskLifeCycleEventListener()</identifier>
+            <identifier>new com.redhat.batigerteam.example_tracing.ExampleTaskLifeCycleEventListener()</identifier>
             <parameters/>
         </task-event-listener>
     </task-event-listeners>
